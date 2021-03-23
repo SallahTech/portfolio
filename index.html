@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="./src/styles/main.css" />
   <title>SallahTech</title>
   <style>
@@ -35,7 +36,7 @@
               <li><a href="#about-section">About</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#portfolio-wrapper">Portfolio</a></li>
-              <li><a href="/">Contact</a></li>
+              <li><a href="#contact-section">Contact</a></li>
               <ol />
               <div class="resume-container">
                 <li><a href="#" class="resume-btn">Resume</a></li>
@@ -115,7 +116,7 @@
       </section>
 
       <section id="about-section">
-        <h2 class="heading-about">About Me</h2>
+        <h2 class="numbered-heading">About Me</h2>
         <div class="content">
           <div class="content-right">
             <figure class="profile-container">
@@ -137,214 +138,140 @@
 
         </div>
 
-        <div class="skills-wrapper" id="skills">
-
-          <div class="skills-container">
-            <h3>
-              Languages and Tools
-            </h3>
-            <ul class="skills-list">
-              <li>
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="7" stroke="#33FFA9" stroke-width="2"></rect>
-                  </svg></span> HTML5
-              </li>
-              <li>
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="7" stroke="#33FFA9" stroke-width="2"></rect>
-                  </svg></span>(S)CSS
-              </li>
-              <li>
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="7" stroke="#33FFA9" stroke-width="2"></rect>
-                  </svg></span>JavaScript (ES6+)
-              </li>
-              <li>
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="7" stroke="#33FFA9" stroke-width="2"></rect>
-                  </svg></span>React
-              </li>
-              <li>
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="7" stroke="#33FFA9" stroke-width="2"></rect>
-                  </svg></span>Redux
-              </li>
-              <li>
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="7" stroke="#33FFA9" stroke-width="2"></rect>
-                  </svg></span>C/C++
-              </li>
-            </ul>
-          </div>
-
-          <div class="cube-wrapper">
-            <div class="cube-container">
-              <div class="shadow-container">
-                <div class="shadow">
-                  <div>&nbsp;</div>
+      </section>
+      <section id="portfolio-section">
+        <div class="portfolio-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="portfolio-content offset-md-2 col-md-8">
+                <div class="section-title">
+                  <div class="section-title__title">
+                    <div class="numbered-heading">Porfolio Projects</div>
+                  </div>
+                  <div class="section-title__description">
+                    Most recent work
+                  </div>
                 </div>
-              </div>
-              <div id="wrapper">
-                <div class="box-area">
-                  <div id="box-front" class="box">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true" focusable="false" width="220px" height="220px"
-                      style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                      preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
-                      <path
-                        d="M15.994 3c-.365 0-.73.09-1.045.27L5.04 8.99C4.4 9.36 4 10.06 4 10.8v10.38c0 .75.4 1.44 1.04 1.81l2.6 1.5c1.26.62 1.71.62 2.28.62c1.87 0 2.94-1.13 2.94-3.09V11.31a.29.29 0 0 0-.29-.29h-1.25a.286.286 0 0 0-.29.29v10.7c0 .88-.91 1.74-2.38 1.01l-2.72-1.57a.303.303 0 0 1-.16-.27V10.81c0-.12.06-.22.16-.28l9.91-5.72a.29.29 0 0 1 .31 0l9.91 5.72c.1.06.16.16.16.27v10.38c0 .11-.06.22-.15.27l-9.92 5.73a.34.34 0 0 1-.31 0l-2.55-1.51a.23.23 0 0 0-.24-.02c-.71.4-.84.45-1.5.68c-.16.05-.41.15.09.43l3.31 1.96c.32.18.68.28 1.04.28c.37 0 .73-.1 1.05-.28l9.92-5.73c.64-.37 1.04-1.06 1.04-1.81V10.81c0-.75-.4-1.44-1.04-1.81l-9.92-5.73c-.316-.18-.68-.27-1.046-.27zm2.666 8.006c-2.83 0-4.52 1.2-4.52 3.2c0 2.17 1.68 2.768 4.4 3.038c3.25.32 3.5.802 3.5 1.442c0 1.1-.89 1.57-2.98 1.57c-2.63 0-3.21-.661-3.4-1.961a.28.28 0 0 0-.28-.24h-1.29a.28.28 0 0 0-.28.28c0 1.67.91 3.66 5.25 3.66c3.14 0 4.94-1.24 4.94-3.4c0-2.14-1.45-2.71-4.49-3.12c-3.09-.4-3.4-.61-3.4-1.33c0-.6.27-1.39 2.55-1.39c2.03 0 2.79.44 3.1 1.81c.03.13.14.23.28.23h1.29c.08 0 .15-.04.21-.1a.27.27 0 0 0 .07-.22c-.2-2.36-1.77-3.47-4.95-3.47z"
-                        fill="#f0db4f" />
-                      <rect x="0" y="0" width="32" height="32" fill="rgba(0, 0, 0, 0)" />
-                    </svg>
+                <div class="portfolio-row">
+                  <div class="wrapper portfolio-img">
+                    <img class='card first-card' id='tilt-card' src="./src/images/One-Stp-Shop-Ltd-.png" alt="">
+                  </div>
+                  <div class="portfolio-text portfolio-text-right">
+                    <h3 class="portfolio-h3">
+                      E-Commerce Site
+                      <h3 />
+                      <p class="portfolio-p">
+                        Written in React and Styled Components, This is an e-commerce website i built in a follow along
+                        course and it uses firebase authentication and fire storage for database and Redux for state
+                        statement, and it uses stripe for payment processing.
+                      </p>
+                      <a href="https://sallah-express.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">Live Demo<span class="right-arrow">
+                          &rarr;
+                        </span></a>
+                  </div>
+                </div>
+                <div class="portfolio-row needs-reverse">
 
+                  <div class="portfolio-text portfolio-text-left">
+                    <h3 class="portfolio-h3">
+                      Trillo
+                      <h3 />
+                      <p class="portfolio-p">
+                        This beautiful site was built mainly for practice purposes, it uses HTML5, CSS3, and SCSS, it is
+                        kind of line a clone for trillio.
+                      </p>
+                      <a href="https://sallahtech.github.io/Trillio/" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">Live Demo <span class="right-arrow">
+                          &rarr;
+                        </span></a>
                   </div>
-                  <div id="box-right" class="box">
-                    <!-- <img src="./src/images/react (1).png" width="300px" alt=""> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true" focusable="false" width="220px" height="220px"
-                      style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                      preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228">
-                      <path
-                        d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345c.522 2.107.986 4.173 1.386 6.193zM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94zM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18zM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3zM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86z"
-                        fill="#00D8FF" />
-                      <rect x="0" y="0" width="256px" height="228" fill="rgba(0, 0, 0, 0)" />
-                    </svg>
+                  <div class="portfolio-wrapper portfolio-img">
+                    <img class="card" src="./src/images/trillo-app.png" alt="">
                   </div>
-                  <div id="box-back" class="box">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true" focusable="false" width="220px" height="220px"
-                      style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                      preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                      <path
-                        d="M13.1 3.5l.7 1.1l.7-1.1V5h1V2h-1l-.7 1.1l-.6-1.1h-1.1v3h1zM18.4 5V4H17V2h-1v3zM9.8 5h1V3h.9V2H8.9v1h.9zM6.6 4h.9v1h1V2h-1v1h-.9V2h-1v3h1zM5 6l1.2 14.4L12 22l5.8-1.6L19 6H5zm11.3 4.6H9.5l.2 1.8h6.4l-.5 5.5l-3.6 1l-3.6-1l-.3-2.9h1.8l.1 1.5l2 .5l2-.5l.2-2.3H8l-.5-5.3h9l-.2 1.7z"
-                        fill="#626262" />
-                    </svg>
+                </div>
+                <div class="portfolio-row">
+                  <div class="portfolio-wrapper portfolio-img">
+                    <img class="card" src="./src/images/Drag-and-Drop.png" alt="">
                   </div>
-                  <div id="box-left" class="box">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true" focusable="false" width="220px" height="220px"
-                      style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                      preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
-                      <path
-                        d="M4 2l2.181 24.738L16 30l9.819-3.262L28 2zm19.569 5l-.3 2.956l-7.225 3.087h6.969l-.8 9.163L16.076 24l-6.175-1.825l-.4-4.619h3.056l.2 2.394l3.287.831l3.419-.962l.231-3.85l-10.406-.031l-.225-2.894l7.413-3.087H8.795l-.363-2.956z"
-                        fill="#3c99dc" />
-                      <rect x="0" y="0" width="32" height="32" fill="rgba(0, 0, 0, 0)" />
-                    </svg>
+                  <div class="portfolio-text portfolio-text-right">
+                    <h3 class="portfolio-h3">
+                      Kanban Board
+                      <h3 />
+                      <p class="portfolio-p">
+                        Written in HTML5, CSS3, and Javascript. Kanban Board is kind of like a clone for the Trello
+                        project management tool, it has draag and drop functionality and it uses localStorage to store
+                        anything you do.
+                      </p>
+                      <a href="https://sallahtech.github.io/kanban-board/" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">Live Demo <span class="right-arrow">
+                          &rarr;
+                        </span></a>
                   </div>
-                  <div id="box-top" class="box">&nbsp;</div>
-                  <div id="box-bottom" class="box">&nbsp;</div>
+
+                </div>
+                <div class="portfolio-row needs-reverse">
+
+                  <div class="portfolio-text portfolio-text-left">
+                    <h3 class="portfolio-h3">
+                      Easy Bank Landing Page
+                      <h3 />
+                      <p class="portfolio-p">
+                        Written in HTML5, CSS3, and SCSS and a little bit of JavaScript. This was basically a design
+                        from
+                        frontend-Mentor, and so i built it using the design files they give you.
+                      </p>
+                      <a href="https://easybankpage1.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">Live Demo <span class="right-arrow">
+                          &rarr;
+                        </span></a>
+                  </div>
+                  <div class="portfolio-wrapper portfolio-img">
+                    <img class="card" src="./src/images/Frontend-Mentor-Easybank-landing-page.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </section>
-      <section id="portfolio-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="portfolio-content offset-md-2 col-md-8">
-              <div class="section-title">
-                <div class="section-title__title">
-                  <div class="">Porfolio Projects</div>
-                </div>
-                <div class="section-title__description">
-                  Most recent work
-                </div>
+      <section id="contact-section" class="contact-section">
+        <div class="numbered-heading">Get In Touch</div>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <form action="sallahbbc@gmail.com" method="POST" class="form" data-netlify="true">
+              <div class="form-group">
+                <input type="text" autocomplete="off" class="form-input" id="name" name="name" placeholder="Full Name"
+                  required>
+                <label for="name" class="form-label">Full Name</label>
               </div>
-              <div class="portfolio-row">
-                <div class="wrapper portfolio-img">
-                  <img class='card' id='tilt-card' src="./src/images/One-Stp-Shop-Ltd-.png" alt="">
-                </div>
-                <div class="portfolio-text portfolio-text-right">
-                  <h3 class="portfolio-h3">
-                    E-Commerce Site
-                    <h3 />
-                    <p class="portfolio-p">
-                      Written in React and Styled Components, This is an e-commerce website i built in a follow along
-                      course and it uses firebase authentication and fire storage for database and Redux for state
-                      statement, and it uses stripe for payment processing.
-                    </p>
-                    <a href="https://sallah-express.herokuapp.com/" target="_blank" rel="noopener noreferrer"
-                      class="portfolio-link">Live Demo<span class="right-arrow">
-                        &rarr;
-                      </span></a>
-                </div>
+              <div class="form-group">
+                <input autocomplete="off" type="email" class="form-input" id="email" name="email"
+                  placeholder="Email Address" required>
+                <label for="email" class="form-label">Email Address</label>
               </div>
-              <div class="portfolio-row needs-reverse">
-
-                <div class="portfolio-text portfolio-text-left">
-                  <h3 class="portfolio-h3">
-                    Trillo
-                    <h3 />
-                    <p class="portfolio-p">
-                      This beautiful site was built mainly for practice purposes, it uses HTML5, CSS3, and SCSS, it is
-                      kind of line a clone for trillio.
-                    </p>
-                    <a href="https://sallahtech.github.io/Trillio/" target="_blank" rel="noopener noreferrer"
-                      class="portfolio-link">Live Demo <span class="right-arrow">
-                        &rarr;
-                      </span></a>
-                </div>
-                <div class="portfolio-wrapper portfolio-img">
-                  <img class="card" src="./src/images/trillo-app.png" alt="">
-                </div>
+              <div class="form-group">
+                <textarea autocomplete="off" class="form-input" placeholder="Message" name="messsage"
+                  required></textarea>
               </div>
-              <div class="portfolio-row">
-                <div class="portfolio-wrapper portfolio-img">
-                  <img class="card" src="./src/images/Drag-and-Drop.png" alt="">
-                </div>
-                <div class="portfolio-text portfolio-text-right">
-                  <h3 class="portfolio-h3">
-                    Kanban Board
-                    <h3 />
-                    <p class="portfolio-p">
-                      Written in HTML5, CSS3, and Javascript. Kanban Board is kind of like a clone for the Trello
-                      project management tool, it has draag and drop functionality and it uses localStorage to store
-                      anything you do.
-                    </p>
-                    <a href="https://sallahtech.github.io/kanban-board/" target="_blank" rel="noopener noreferrer"
-                      class="portfolio-link">Live Demo <span class="right-arrow">
-                        &rarr;
-                      </span></a>
-                </div>
-
+              <div class="form-group">
+                <button class="btn submit-btn">SEND</button>
               </div>
-              <div class="portfolio-row">
-
-                <div class="portfolio-text portfolio-text-left">
-                  <h3 class="portfolio-h3">
-                    Easy Bank Landing Page
-                    <h3 />
-                    <p class="portfolio-p">
-                      Written in HTML5, CSS3, and SCSS and a little bit of JavaScript. This was basically a design from
-                      frontend-Mentor, and so i built it using the design files they give you.
-                    </p>
-                    <a href="https://easybankpage1.netlify.app/" target="_blank" rel="noopener noreferrer"
-                      class="portfolio-link">Live Demo <span class="right-arrow">
-                        &rarr;
-                      </span></a>
-                </div>
-                <div class="portfolio-wrapper portfolio-img">
-                  <img class="card" src="./src/images/Frontend-Mentor-Easybank-landing-page.png" alt="">
-                </div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </section>
     </div>
   </main>
-  <script src="./src/script.js"></script>
-  <script src="./src/vanilla-tilt.min.js"></script>
+  <script src="/src/script.js"></script>
+  <script src="/src/vanilla-tilt.min.js"></script>
   <script type="text/javascript">
-    VanillaTilt.init(document.querySelectorAll(".card"), {
-      max: 20,
-      speed: 300
-    });
-    
-    //It also supports NodeList
-    // VanillaTilt.init(document.querySelectorAll(".your-element"));
+    // VanillaTilt.init(document.querySelectorAll(".card"), {
+    //   max: 25,
+    //   speed: 300,
+
+    // });
+
   </script>
 </body>
 
