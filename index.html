@@ -5,12 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./src/styles/main.css" />
-  <title>SallahTech</title>
-  <style>
+  <title>SallahTech | Baboucarr Sallah</title>
 
-  </style>
 </head>
 
 <body>
@@ -57,13 +55,14 @@
               <li><a href="#contact-section">Contact</a></li>
               <ol />
               <div class="resume-container">
-                <li><a href="./src/images/resume.pdf" class="resume-btn" >Resume</a></li>
+                <li><a href="./src/images/resume.pdf" class="resume-btn">Resume</a></li>
               </div>
           </div>
         </nav>
       </header>
-      
-      <div class="left-icons">
+
+      <div class="left-icons" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <ul class="social-list">
           <li>
             <a href="https://github.com/sallahtech" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg
@@ -104,7 +103,7 @@
 
       </div>
 
-      <section class="hero">
+      <section class="hero" data-aos="fade-down">
         <div class="hero-left">
           <div class="intro">
             <div class="wave">👋</div>
@@ -125,7 +124,7 @@
           </div>
           <a href="#contact-section">
 
-            <button  class="btn cta btn-animated" id="open">Hire Me</button>
+            <button class="btn cta btn-animated" id="open">Hire Me</button>
           </a>
         </div>
 
@@ -137,7 +136,7 @@
         </div>
       </section>
 
-      <section id="about-section">
+      <section id="about-section" data-aos="fade-down">
         <h2 class="numbered-heading">About Me</h2>
         <div class="content">
           <div class="content-right">
@@ -161,27 +160,27 @@
         </div>
 
       </section>
-      <section id="skills-section">
+      <section id="skills-section" data-aos="fade-down">
         <div class="numbered-heading"> Skills </div>
         <div>
           <div class="skills-container">
             <div class="skill-row">
               <div class="skills-wrapper">
-               
                 <div class="skills-row">
                   <div class="development-skills skills">
                     <div class="skills-subtitle">
                       Development
                     </div>
                     <div class="skills-list">
-                      <div class="skills-list-item">Javascript</div>
-                      <div class="skills-list-item">React</div>
                       <div class="skills-list-item">HTML</div>
                       <div class="skills-list-item">CSS</div>
                       <div class="skills-list-item">SCSS</div>
                       <div class="skills-list-item">Bootstrap</div>
-                      <div class="skills-list-item">Git & GitHub</div>
+                      <div class="skills-list-item">Javascript</div>
+                      <div class="skills-list-item">React</div>
                       <div class="skills-list-item">Styled Components</div>
+                      <div class="skills-list-item">Git & GitHub</div>
+                      <div class="skills-list-item">MySql</div>
                     </div>
                   </div>
                   <div class="design-skills skills">
@@ -197,7 +196,6 @@
                     <div class="skills-subtitle"> Passions</div>
                     <div class="skills-list">
                       <div class="passions-row">
-                        
                         <div class="passions-text">Learning</div>
                       </div>
                       <div class="passions-row">
@@ -214,7 +212,7 @@
           </div>
         </div>
       </section>
-      <section id="portfolio-section">
+      <section id="portfolio-section" data-aos="fade-down">
         <div class="portfolio-wrapper">
           <div class="portfolio-container">
             <div class="row">
@@ -228,8 +226,8 @@
                   </div> -->
                 </div>
                 <div class="portfolio-row">
-                  <div class="wrapper portfolio-img">
-                    <img class='card first-card' id='tilt-card' src="./src/images/One-Stp-Shop.png" alt="">
+                  <div class="wrapper portfolio-img" data-aos="zoom-in">
+                    <img class='card first-card' id='tilt-card' src="./src/images/One-Stp-Shop.png" alt="E-commerce site photo">
                   </div>
                   <div class="portfolio-text portfolio-text-right">
                     <h3 class="portfolio-h3">
@@ -240,12 +238,26 @@
                         course and it uses firebase authentication and fire storage for database and Redux for state
                         statement, and it uses stripe for payment processing.
                       </p>
-                      
-                        <div class="project-links"><a href="https://github.com/SallahTech/crwn-clothing" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://sallah-express.herokuapp.com/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></div>
+                      <div class="project-links"><a href="https://github.com/SallahTech/crwn-clothing"
+                          aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                          </svg></a><a href="https://sallah-express.herokuapp.com/" aria-label="External Link"
+                          class="external" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg></a></div>
                   </div>
                 </div>
                 <div class="portfolio-row needs-reverse">
-
                   <div class="portfolio-text portfolio-text-left">
                     <h3 class="portfolio-h3">
                       Trillo
@@ -254,16 +266,31 @@
                         This beautiful site was built mainly for practice purposes, it uses HTML5, CSS3, and SCSS, it is
                         kind of line a clone for trillio.
                       </p>
-                      
-                        <div class="project-links"><a href="https://github.com/SallahTech/Trillio" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://sallahtech.github.io/Trillio/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></div>
+                      <div class="project-links"><a href="https://github.com/SallahTech/Trillio"
+                          aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                          </svg></a><a href="https://sallahtech.github.io/Trillio/" aria-label="External Link"
+                          class="external" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg></a></div>
                   </div>
-                  <div class="portfolio-wrapper portfolio-img">
-                    <img class="card" src="./src/images/trillo-app.png" alt="">
+                  <div class="portfolio-wrapper portfolio-img"   data-aos="zoom-in">
+                    <img class="card" src="./src/images/trillo-app.png" alt="Trillo image"  />
                   </div>
                 </div>
                 <div class="portfolio-row">
-                  <div class="portfolio-wrapper portfolio-img">
-                    <img class="card" src="./src/images/Drag-and-Drop.png" alt="">
+                  <div class="portfolio-wrapper portfolio-img" data-aos="zoom-in">
+                    <img class="card" src="./src/images/Drag-and-Drop.png" alt="Kanban board image">
                   </div>
                   <div class="portfolio-text portfolio-text-right">
                     <h3 class="portfolio-h3">
@@ -274,13 +301,26 @@
                         project management tool, it has draag and drop functionality and it uses localStorage to store
                         anything you do.
                       </p>
-                    
-                        <div class="project-links"><a href="https://github.com/SallahTech/kanban-board" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://sallahtech.github.io/kanban-board/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></div>
+                      <div class="project-links"><a href="https://github.com/SallahTech/kanban-board"
+                          aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                          </svg></a><a href="https://sallahtech.github.io/kanban-board/" aria-label="External Link"
+                          class="external" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg></a></div>
                   </div>
-
                 </div>
                 <div class="portfolio-row needs-reverse">
-
                   <div class="portfolio-text portfolio-text-left">
                     <h3 class="portfolio-h3">
                       Easy Bank Landing Page
@@ -290,11 +330,26 @@
                         from
                         frontend-Mentor, and so i built it using the design files they give you.
                       </p>
-                      
-                        <div class="project-links"><a href="https://github.com/SallahTech/easybank-landing-page" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://easybankpage1.netlify.app/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></div>
+                      <div class="project-links"><a href="https://github.com/SallahTech/easybank-landing-page"
+                          aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                          </svg></a><a href="https://easybankpage1.netlify.app/" aria-label="External Link"
+                          class="external" rel="noopener noreferrer" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg></a></div>
                   </div>
-                  <div class="portfolio-wrapper portfolio-img">
-                    <img class="card" src="./src/images/Frontend-Mentor-Easybank-landing-page.png" alt="">
+                  <div class="portfolio-wrapper portfolio-img" data-aos="zoom-in">
+                    <img class="card" src="./src/images/Frontend-Mentor-Easybank-landing-page.png" alt="Easy bank page photo">
                   </div>
                 </div>
               </div>
@@ -302,7 +357,7 @@
           </div>
         </div>
       </section>
-      <section id="contact-section" class="contact-section">
+      <section id="contact-section" class="contact-section" data-aos="fade-down">
         <div class="numbered-heading">Get In Touch</div>
         <div class="contact-wrapper">
           <div class="contact-form">
@@ -332,14 +387,22 @@
   </main>
   <script src="/src/script.js"></script>
   <script src="/src/vanilla-tilt.min.js"></script>
+
   <script type="text/javascript">
-    // VanillaTilt.init(document.querySelectorAll(".card"), {
-    //   max: 25,
-    //   speed: 300,
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 20,
+      speed: 300,
+      perspective: 2500,
+      transition: true,
+      easing: "cubic-bezier(.03,.98,.52,.99)", 
 
-    // });
-
+    });
   </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+<script>
+  AOS.init({duration: 1200});
+</script>
 </body>
 
 </html>

@@ -834,9 +834,9 @@ p {
   margin-bottom: 8rem;
 }
 
-.wrapper {
+/* .wrapper {
   perspective: 30px;
-}
+} */
 
 .portfolio-img {
   width: 60%;
@@ -851,6 +851,7 @@ p {
   border: 2px solid #5cd2b8;
   box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
   transition: transform 0.5s;
+  transform-style: preserve-3d;
 }
 
 .portfolio-img .card:hover {
