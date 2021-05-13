@@ -1,5 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'); */
-
+/* * {
+  outline: 1px solid red;
+} */
 :root {
   --white: #f7f8f9;
 }
@@ -615,7 +617,7 @@ p {
   -webkit-box-align: center;
   position: relative;
   margin: 10px 0 30px;
-  width: 100%;
+  /* width: 100%; */
   font-size: clamp(26px, 5vw, 3.2rem);
   white-space: nowrap;
 }
@@ -1289,6 +1291,11 @@ textarea {
 @media (max-width: 37.5em) {
   section {
     flex-direction: column;
+    padding-top: 0;
+  }
+
+  .btn {
+    padding: 15px 75px;
   }
 
   .left-icons {
@@ -1297,7 +1304,7 @@ textarea {
 
   html {
     /* font size is 8px */
-    font-size: 50%;
+    font-size: 52.5%;
   }
 
   body {
@@ -1362,6 +1369,7 @@ textarea {
 
   .numbered-heading {
     text-align: center;
+    margin: 0 auto;
   }
 
   span {
@@ -1371,7 +1379,7 @@ textarea {
   p,
   .description,
   .skills-list-item {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 
   .skills-list-item {
@@ -1398,7 +1406,7 @@ textarea {
 
   .portfolio-link {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .portfolio-row {
@@ -1439,14 +1447,39 @@ textarea {
   }
 
   .numbered-heading::after {
-    width: 80px;
+    width: 0;
     height: 3px;
+    display: none;
   }
 }
 
 @media (max-width: 500px) {
   body {
     padding: 0 1rem;
+  }
+
+  section {
+    padding-top: 0;
+  }
+
+  #about-section {
+    padding-bottom: 0;
+  }
+
+  #skills-section {
+    padding-top: 0;
+  }
+
+  #contact-section .numbered-heading {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-wrapper {
+    width: 95%;
+  }
+
+  #skills-section > div {
+    width: unset;
   }
 
   .numbered-heading {
