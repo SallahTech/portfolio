@@ -489,7 +489,7 @@ h2 {
 .job h3 {
   margin-top: 10px;
   color: #8892b0;
-  line-height: 0.9;
+  line-height: 1.08;
   font-weight: medium;
 }
 
@@ -548,7 +548,7 @@ p {
 
 .btn {
   font-size: 1.3rem;
-  font-weight: medium;
+  font-weight: 600;
   letter-spacing: 2px;
   border: 2px solid #5cd2b8;
   border-radius: 4px;
@@ -558,7 +558,8 @@ p {
   padding: 15px 25px;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .cta:hover {
@@ -1295,7 +1296,7 @@ textarea {
   }
 
   .btn {
-    padding: 15px 75px;
+    padding: 15px 50px;
   }
 
   .left-icons {
@@ -1330,9 +1331,9 @@ textarea {
     flex-direction: column-reverse;
   }
 
-  .hero .btn {
+  /* .hero .btn {
     margin-left: 20%;
-  }
+  } */
 
   .hero-right {
     margin-top: 2rem;
@@ -1378,8 +1379,9 @@ textarea {
 
   p,
   .description,
-  .skills-list-item {
-    font-size: 1.9rem;
+  .skills-list-item,
+  .passions-text {
+    font-size: 1.8rem;
   }
 
   .skills-list-item {
