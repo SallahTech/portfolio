@@ -4,16 +4,19 @@
 :root {
   --white: #f7f8f9;
 }
+
 html {
-  font-size: 62.5%;
+  font-size: 65%;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 html::-webkit-scrollbar {
   width: 16px;
   height: 16px;
@@ -31,7 +34,7 @@ html::-webkit-scrollbar-track {
 
 body {
   counter-reset: section;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -47,7 +50,7 @@ body {
 /* HAMBURGER MENU  */
 .navigation {
   display: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navigation-button {
@@ -63,6 +66,10 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
+}
+
+.nav-links a {
+  font-size: 2rem;
 }
 
 .navigation-button:focus {
@@ -107,7 +114,7 @@ body {
 }
 .navigation-item {
   margin: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navigation-link:link,
@@ -159,8 +166,8 @@ body {
 #navigation-icon,
 #navigation-icon::before,
 #navigation-icon::after {
-  content: '';
-
+  content: "";
+  font-size: 2rem !important;
   width: 3rem;
   left: 0;
   height: 2px;
@@ -209,10 +216,9 @@ main {
 }
 
 section {
-  display: flex;
   margin: 0px auto;
-  padding: 50px 0px;
-  max-width: 1000px;
+  padding: 50px;
+  width: 100%;
 }
 
 /* Navigation  */
@@ -276,8 +282,8 @@ nav {
     0% 50%
   );
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  -webkit-clip-path: url('#hexagon-clip');
-  clip-path: url('#hexagon-clip');
+  -webkit-clip-path: url("#hexagon-clip");
+  clip-path: url("#hexagon-clip");
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   margin: 0 auto;
@@ -332,7 +338,7 @@ a.hexagon:hover {
 }
 
 .links-wrapper ol li a::before {
-  content: '0' counter(item) '.';
+  content: "0" counter(item) ".";
   margin-right: 5px;
   color: #5cd2b8;
   font-size: 1.3rem;
@@ -355,7 +361,7 @@ nav .resume-btn {
 }
 
 .links-wrapper .resume-btn::before {
-  content: '';
+  content: "";
 }
 
 a {
@@ -372,6 +378,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 0 4.5rem;
 }
 
 /* Left side icons */
@@ -397,7 +404,7 @@ a {
 }
 
 .social-list::after {
-  content: '';
+  content: "";
   display: block;
   width: 1px;
   height: 100px;
@@ -427,7 +434,8 @@ a:hover {
   -webkit-box-pack: center;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px) !important;
+  margin-top: 100px !important;
 }
 
 .intro h1 {
@@ -490,7 +498,7 @@ p {
   margin-inline-end: 0px;
   line-height: 1.5;
   letter-spacing: 2px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-left: 0;
   text-align: left;
   font-weight: normal;
@@ -500,7 +508,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.5rem;
+  margin-top: 100px;
 }
 .image-container {
   width: 45rem;
@@ -557,7 +565,7 @@ p {
 }
 
 .cta::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -586,8 +594,6 @@ p {
 
 /* About me section styles */
 #about-section {
-  position: relative;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -608,7 +614,7 @@ p {
   position: relative;
   bottom: -2px;
   counter-increment: section 1;
-  content: '0' counter(section) '.';
+  content: "0" counter(section) ".";
   margin-right: 10px;
   color: #5cd2b8;
   font-family: inherit;
@@ -617,7 +623,7 @@ p {
 }
 
 .numbered-heading::after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   top: 2px;
@@ -686,7 +692,7 @@ p {
 #skills-section {
   width: 100%;
   overflow: hidden;
-  padding-top: 5rem;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -714,7 +720,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   min-height: 1px;
-  gap: 1rem;
+  gap: 14rem;
 }
 
 .skills {
@@ -738,7 +744,7 @@ p {
 
 .skills-list-item {
   height: 40px;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--white);
   padding: 0.5rem 0.25rem 0;
@@ -759,16 +765,11 @@ p {
 }
 
 .passions-text {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: var(--white);
   font-weight: 500;
   border-bottom: 1px solid rgba(92, 210, 184, 0.4);
   height: 25px;
-}
-
-/* Portfolio section */
-.portfolio-wrapper {
-  padding: 7rem 0;
 }
 
 .portfolio-wrapper .portfolio-container {
@@ -790,6 +791,7 @@ p {
   width: 100%;
   min-height: 1px;
   margin-right: -100px;
+  text-align: justify;
 }
 
 .section-title {
@@ -816,13 +818,13 @@ p {
 
 .portfolio-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 8rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15rem;
 }
 
 .portfolio-img {
-  width: 60%;
+  width: 45%;
   transition: 0.5s;
   position: relative;
 }
@@ -843,13 +845,12 @@ p {
 }
 
 .portfolio-text-right {
-  flex: 1 1 auto;
-  width: 60%;
+  text-align: justify;
+  width: 50%;
 }
 
 .portfolio-text-left {
-  flex: 1 1 auto;
-  width: 60%;
+  width: 50%;
 }
 
 .portfolio-h3 {
@@ -860,7 +861,8 @@ p {
 }
 
 .portfolio-p {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  text-align: justify;
 }
 
 .portfolio-link {
@@ -873,11 +875,15 @@ p {
 /*  Contact section */
 .contact-wrapper {
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-left: 90px;
 }
 
 .contact-form {
   width: 100%;
-  padding: 6rem;
 }
 
 .form-group:not(:last-child) {
@@ -1004,11 +1010,11 @@ textarea {
 @media (max-width: 1800px) {
   /* font size is 9px */
   html {
-    font-size: 75%;
+    font-size: 65%;
   }
 
   .hero {
-    margin-top: 80px;
+    margin-top: 100px;
     align-items: center;
   }
 
@@ -1034,6 +1040,7 @@ textarea {
     flex-direction: column;
     width: 100%;
   }
+
   .content {
     display: flex;
     padding: 8rem 0;
@@ -1062,7 +1069,9 @@ textarea {
   .portfolio-row {
     flex-direction: row;
     padding: 0 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .portfolio-text-right {
@@ -1079,8 +1088,10 @@ textarea {
 
   /* contact section */
   #contact-section {
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1093,10 +1104,6 @@ textarea {
 
   .left-icons {
     display: none;
-  }
-
-  html {
-    font-size: 56.25%;
   }
 
   body {
@@ -1164,10 +1171,6 @@ textarea {
     margin: 0 10px;
   }
 
-  p {
-    font-size: 1.6rem;
-  }
-
   .portfolio-wrapper {
     width: 100%;
     padding: 1rem 0;
@@ -1195,9 +1198,9 @@ textarea {
   }
 
   .portfolio-row {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 6rem;
+    align-items: flex-start;
+    margin-bottom: 10rem;
+    justify-content: space-between;
     margin-left: 0;
   }
 
@@ -1208,13 +1211,6 @@ textarea {
   .needs-reverse {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  #contact-section {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 25px;
-    margin-bottom: 2rem;
   }
 
   .contact-form {
@@ -1228,11 +1224,6 @@ textarea {
   .numbered-heading::after {
     width: 80px;
     height: 2px;
-  }
-
-  #contact-section {
-    width: 75%;
-    margin: 0 auto;
   }
 
   .contact-form {
@@ -1259,11 +1250,6 @@ textarea {
     display: none;
   }
 
-  html {
-    /* font size is 8px */
-    font-size: 52.5%;
-  }
-
   body {
     display: flex;
     align-content: center;
@@ -1282,12 +1268,11 @@ textarea {
   }
 
   .hero {
-    margin: 80px 0 0 0;
+    margin: 100px 0 0 0;
     flex-direction: column-reverse;
   }
 
   .hero-right {
-    margin-top: 2rem;
     margin-bottom: 4rem;
   }
 
@@ -1362,10 +1347,9 @@ textarea {
   }
 
   .portfolio-row {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 6rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10rem;
     margin-left: 0;
   }
 
@@ -1378,15 +1362,6 @@ textarea {
   }
   .portfolio-text-right {
     margin-left: 0;
-  }
-
-  #contact-section {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .contact-section {
-    padding: 0rem 3rem;
   }
 
   .form-group {
@@ -1440,7 +1415,7 @@ textarea {
   }
 
   .numbered-heading::before {
-    content: '';
+    content: "";
   }
 
   .numbered-heading::after {
@@ -1471,4 +1446,76 @@ textarea {
 .project-links a svg {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1500px) {
+  /* Your CSS styles for this screen size range go here */
+  .portfolio-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10rem;
+    margin-left: 0;
+    width: 100%;
+
+    .portfolio-img {
+      width: 100%;
+    }
+
+    .portfolio-text {
+      width: 100%;
+    }
+  }
+
+  .skills-row {
+    gap: 3rem;
+  }
+
+  .needs-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  .contact-wrapper {
+    margin-left: 0;
+  }
+
+  .hero-left {
+    margin-bottom: 10rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+
+    & div.content-left {
+      width: unset;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  /* Your CSS styles for this screen size range go here */
+  html {
+    font-size: 52.5%;
+  }
+
+  p {
+    text-align: left !important;
+  }
 }
